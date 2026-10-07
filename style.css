@@ -1,0 +1,974 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('./background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+/* Header & Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-buttons button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(136, 136, 173);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.nav-buttons button:hover {
+    background-color: rgb(106, 106, 153);
+}
+
+/* Typography */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: #4a90e2;
+    margin-bottom: 5px;
+}
+
+h4 {
+    color: orange;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+/* Sections */
+.top-banner img.full-width {
+    width: 100%;
+    height: auto;
+}
+
+.hero-section, .info-section {
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.wizard-img {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.wizard-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-section ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.info-section li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.infinitive-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.infinitive-section img {
+    max-width: 100%;
+    height: auto;
+}
+/* Asosiy konteyner */
+.devops-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Chap tarafdagi rasm (Infinitive) */
+.Infinitive {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Infinitive img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* O'ng tarafdagi matn sozlamalari */
+.Text {
+    flex: 1;
+    text-align: left;
+}
+
+/* Ro'yxat stili */
+.devops-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.devops-list li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+/* Hero / About qismi uchun umumiy blok */
+.hero-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.hero-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Контейнер для заголовка и Wizard logos (они будут на одной линии) */
+.about-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-titles h3 {
+    color: #4a90e2;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.about-titles h2 {
+    font-size: 3.5rem;
+    color: white;
+    margin: 0;
+}
+
+/* Картинка Wizard прямо рядом с заголовком */
+.Wizard {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.Wizard img {
+    max-height: 100px; /* Вы можете изменить высоту картинки под свой дизайн */
+    width: auto;
+}
+
+/* Текст описания строго под заголовком и картинкой */
+.about-description {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin-top: 15px;
+}
+
+.why-wizards-section {
+    background-color: #080e1e; /* To'q ko'k orqa fon */
+    background-image: url(./background.svg); /* Tarmoqli chiziqlar fon rasmi */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.why-wizards-section .subtitle {
+    color: #0044ff; /* Kichik ko'k sarlavha */
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.why-wizards-section .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.why-wizards-section .wizards-logo {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Rasmda Wizards logotipi o'zgacha shriftda */
+    padding: 2px 10px;
+    border-radius: 6px;
+}
+
+/* Kartalarni yonma-yon joylashtirish */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-title {
+    color: #1a52efff; /* Yorqin ko me'yoriy ko'k sarlavha */
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.card-text {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+.services-wrapper-section {
+    background-image: url(./background.svg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Yuqori qism: Slajder va 2 ta matn bloklari */
+.top-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    flex-wrap: wrap;
+}
+
+.slider-arrows {
+    display: flex;
+    gap: 12px;
+}
+
+.arrow-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.arrow-btn:hover {
+    border-color: #0055ff;
+    background-color: rgba(0, 85, 255, 0.2);
+}
+
+.top-card {
+    max-width: 320px;
+    text-align: center;
+}
+
+.top-card-title {
+    color: #0044ff; /* Kina rang ko'k sarlavha */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.top-card-text {
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    line-height: 1.4;
+}
+
+/* Sarlavha: Our Range of services */
+.services-heading {
+    text-align: right;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    padding-right: 20px;
+}
+
+/* Pastki qism: 3 ta to'rtburchak karta (Our Range of services) */
+.services-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    flex: 1;
+    min-width: 280px;
+    background: linear-gradient(180deg, rgba(16, 26, 50, 0.8) 0%, rgba(8, 14, 28, 0.9) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.service-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.card-header h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #b0b8c4;
+    line-height: 1.6;
+    margin: 0;
+}
+/* ==========================================
+   How We Work with You Seksiyasi
+   ========================================== */
+.how-we-work-section {
+    position: relative;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.work-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.work-container {
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+/* Izvilistaya yo'l (SVG) */
+.footsteps-path {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Bosqichlar kartasi */
+.work-step {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    z-index: 2;
+}
+
+.work-step.step-left {
+    left: 0;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.work-step.step-right {
+    right: 0;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.work-content {
+    max-width: 440px;
+}
+
+.work-content h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.work-content p {
+    font-size: 0.92rem;
+    line-height: 1.45;
+    color: #d0d7e5;
+    margin-bottom: 6px;
+}
+
+/* Nuqtalar va ulovchi chiziqlar */
+.work-connector {
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.step-left .work-connector {
+    right: -25px;
+}
+
+.step-right .work-connector {
+    left: -25px;
+}
+
+.work-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2b3553;
+    border: 3px solid #5d688a;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+.work-line {
+    height: 2px;
+    width: 35px;
+    background-color: #5d688a;
+}
+
+/* Mobil qurilmalar va planshetlar uchun moslashuvchanlik (Responsive) */
+@media (max-width: 868px) {
+    .work-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footsteps-path {
+        display: none;
+    }
+
+    .work-step {
+        position: relative !important;
+        top: auto !important;
+        width: 100%;
+        padding: 0;
+    }
+
+    .work-step.step-left, .work-step.step-right {
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .work-connector {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Continuation Section Styling */
+.how-we-work-continuation {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.work-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+/* Извилистая линия */
+.footsteps-path {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Карточки с шагами */
+.work-step {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    z-index: 3;
+}
+
+.work-step.step-left {
+    left: 0;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.work-step.step-right {
+    right: 0;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.work-content {
+    max-width: 440px;
+}
+
+.work-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.work-content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #c3cbda;
+    margin-bottom: 4px;
+}
+
+/* Соединительные линии и точки */
+.work-connector {
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.step-left .work-connector {
+    right: -25px;
+}
+
+.step-right .work-connector {
+    left: -25px;
+}
+
+.work-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2b3553;
+    border: 3px solid #5d688a;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+.work-line {
+    height: 2px;
+    width: 35px;
+    background-color: #5d688a;
+}
+
+/* Фоновая геометрическая сетка справа */
+.bg-network {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 45%;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Адаптируемость под мобильные устройства */
+@media (max-width: 868px) {
+    .work-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footsteps-path,
+    .bg-network,
+    .work-connector {
+        display: none;
+    }
+
+    .work-step {
+        position: relative !important;
+        top: auto !important;
+        width: 100%;
+        padding: 0;
+    }
+
+    .work-step.step-left,
+    .work-step.step-right {
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+
+
+/* ==========================================
+   FAQ (Frequently Asked Questions) Section
+   ========================================== */
+.faq-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовок справа */
+.faq-header {
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.faq-subtitle {
+    color: #0044ff; /* Синий подзаголовок */
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.faq-title {
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+/* Контейнер списка аккордеона */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Скрытие стандартного маркера details */
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+}
+
+.faq-question:hover {
+    color: #82aaff;
+}
+
+/* Иконка плюса (+) */
+.faq-icon {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Горизонтальная линия плюса */
+.faq-icon::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 1.5px;
+    background-color: #ffffff;
+}
+
+/* Вертикальная линия плюса */
+.faq-icon::after {
+    content: '';
+    position: absolute;
+    width: 1.5px;
+    height: 10px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+/* Поворот иконки при открытии элемента */
+.faq-item[open] .faq-icon {
+    border-color: #0044ff;
+}
+
+.faq-item[open] .faq-icon::after {
+    transform: rotate(90deg); /* Превращает плюс в минус */
+}
+
+/* Блок ответа */
+.faq-answer {
+    padding-bottom: 20px;
+    color: #b0b8c4;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+/* Адаптируемость под мобильные экраны */
+@media (max-width: 768px) {
+    .faq-header {
+        text-align: left;
+    }
+
+    .faq-title {
+        font-size: 2.2rem;
+    }
+
+    .faq-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+        padding: 18px 0;
+    }
+}
+
+/* ==========================================
+   Contact / Form Section
+   ========================================== */
+.contact-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-container {
+    background: linear-gradient(145deg, #565fdf, #16152e);
+    border-radius: 24px;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Chap taraf matnlar */
+.contact-info {
+    flex: 1;
+    max-width: 480px;
+}
+
+.contact-info h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.25;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 1.05rem;
+    color: #aab2c8;
+    line-height: 1.5;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #4a90e2;
+}
+
+/* O'ng taraf forma */
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #636b83;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4a90e2;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+/* Mobil qurilmalar uchun moslashuvchanlik */
+@media (max-width: 868px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 35px;
+    }
+
+    .contact-info h2 {
+        font-size: 2rem;
+    }
+
+    .contact-info,
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+.AboutKuza img{
+    margin-left: 90vh;
+    margin-top: -30vh; 
+}   
